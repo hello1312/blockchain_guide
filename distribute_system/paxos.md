@@ -81,7 +81,7 @@ Raft 是对 Paxos 的重新设计和实现。
 
 [Raft](https://ramcloud.atlassian.net/wiki/download/attachments/6586375/raft.pdf) 算法是Paxos 算法的一种简化实现。
 
-包括三种角色：leader、candiate 和 follower，其基本过程为：
+包括三种角色：leader、candidate 和 follower，其基本过程为：
 
 * Leader 选举：每个 candidate 随机经过一定时间都会提出选举方案，最近阶段中得票最多者被选为 leader；
 * 同步 log：leader 会找到系统中 log 最新的记录，并强制所有的 follower 来刷新到这个记录；
